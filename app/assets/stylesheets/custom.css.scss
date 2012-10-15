@@ -1,0 +1,49 @@
+
+body {
+	padding-top: 60px;
+}
+
+.logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 15px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.logo:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+.home_title {
+	position: relative;
+	color: blue;
+	top: 100px;
+	font-size: 5em;
+	font-weight: bold;
+	margin: 0px auto;
+	width: 300px;
+	text-align: center;
+}
+
+.home_description {
+	position: relative;
+	color: orange;
+	top: 140px;
+	margin: 0px auto;
+	width: 300px;
+	font-size: 2em;
+	line-height: 1.5
+}
+
+.sign_up_btn {
+	position: relative;
+	top: 160px;
+	margin: 0px auto;
+	width: 300px;
+}
