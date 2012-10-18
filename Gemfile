@@ -6,8 +6,9 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'pg'
 
-group :development do
+group :development, :test do
 	gem 'sqlite3'
+	gem 'rspec-rails'
 end
 
 # Gems used only for assets and not required
