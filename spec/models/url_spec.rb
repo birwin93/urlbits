@@ -13,17 +13,12 @@ describe Url do
  	it { should respond_to(:shortened_url) }
 
  	describe "when object is saved" do 
-		before { @url.create_short_url }
-		its(:shortened_url) { should eq("www.example.com") }
+		before { @url.save }
+		its(:shortened_url) { should eq("www.urlbits.com/55891a1") }
 	end
 
  	describe "when original_url is not present" do
  		before { @url.original_url = " " }
- 		it { should_not be_valid }
- 	end
-
- 	describe "when shortened_url is not present" do
- 		before { @url.shortened_url = " "}
  		it { should_not be_valid }
  	end
 
