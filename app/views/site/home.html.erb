@@ -1,6 +1,13 @@
 
+
 <div class="home_title">urlbits</div>
 <div class="home_description">shorten your URLs now!</div>
 <div class="sign_up_btn">
 	<a class="btn btn-warning">Sign Up Now!</a>
 </div>
+
+<%= form_for(@url) do |f| %>
+	<%= f.text_area :original_url %>
+
+	<%= f.submit "Create Url" %>
+<% end %>

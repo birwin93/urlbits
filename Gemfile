@@ -9,6 +9,10 @@ gem 'pg'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails'
+	gem 'capybara'
+	#gem 'capybara-webkit'
+	gem 'shoulda-matchers'
+	gem 'factory_girl'
 end
 
 # Gems used only for assets and not required
