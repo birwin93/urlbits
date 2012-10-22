@@ -22,6 +22,7 @@ class UrlsController < ApplicationController
 	end
 
 	def index
+		@urls = Url.all
 	end
 
 end

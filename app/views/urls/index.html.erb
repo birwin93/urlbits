@@ -1,0 +1,11 @@
+<ul class="url_list">
+	<% @urls.each do |url| %>
+		<li>
+			<div> Original Url: <a href=<%= url.original_url %> > <%= url.original_url %> </a> </div>
+
+			<div> 
+				Shortened Url: <a href="http://urlbits.herokuapp.com/rd/<%= url.shortened_url %>"> urlbits.herokuapp/rd/<%= url.shortened_url %> </a>
+			</div>
+		</li>
+	<% end %>
+</ul>

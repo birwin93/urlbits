@@ -20,6 +20,19 @@ body {
   text-decoration: none;
 }
 
+.nav-area {
+	margin: 15px 10px;
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 1.1em;
+	}
+	a:hover {
+		text-decoration: none;
+		color: orange;
+	}
+}
+
 .home_title {
 	position: relative;
 	color: blue;
@@ -46,4 +59,12 @@ body {
 	top: 160px;
 	margin: 0px auto;
 	width: 300px;
+}
+
+.url_list {
+	list-style: none;
+	margin-top: 50px;
+	li {
+		border-bottom: 3px solid black;
+	}
 }
