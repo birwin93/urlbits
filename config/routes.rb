@@ -1,6 +1,6 @@
 Urlbits::Application.routes.draw do
   get "site/home"
-
+  match '/rd/:shortened_url(.:format)' => "site#redirect"
   root to: 'site#home'
 
   resources :urls
