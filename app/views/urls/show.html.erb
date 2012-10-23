@@ -7,6 +7,7 @@
 </div>
 
 <%= form_for(@newUrl) do |f| %>
+	<%= f.label :original_url, "original_url" %>
 	<%= f.text_area :original_url %>
 
 	<%= f.submit "Create Url" %>

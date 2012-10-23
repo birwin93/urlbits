@@ -1,4 +1,15 @@
 
+<div class="row">
+	<div class="span6 offset3">
+		<%= form_for(@url) do |f| %>
+			<%= f.label :original_url, "original_url" %>
+			<%= f.text_field :original_url %>
+
+			<%= f.submit "Create Url", class: "btn btn-large btn-primary" %>
+		<% end %>
+	</div>
+</div>
+
 
 <div class="home_title">urlbits</div>
 <div class="home_description">shorten your URLs now!</div>
@@ -6,8 +17,4 @@
 	<a class="btn btn-warning">Sign Up Now!</a>
 </div>
 
-<%= form_for(@url) do |f| %>
-	<%= f.text_area :original_url %>
 
-	<%= f.submit "Create Url" %>
-<% end %>
