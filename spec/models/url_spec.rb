@@ -16,9 +16,8 @@ describe Url do
 	it { should validate_presence_of(:original_url) }
  	
 
- 	describe "when original_url is not unique" do
-		before { same_url = @url.dup }
-
+ 	it "when original_url is not unique" do
+		same_url = @url.dup
  		same_url.should_not be_valid
  	end
 

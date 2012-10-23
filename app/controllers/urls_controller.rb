@@ -4,6 +4,7 @@ class UrlsController < ApplicationController
 
 	def show
 		@url = Url.find(params[:id])
+		@newUrl = Url.new
 	end
 
 	def create

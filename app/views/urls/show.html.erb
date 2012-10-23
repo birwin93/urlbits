@@ -5,3 +5,9 @@
 <div> 
 	Shortened Url: <a href="http://urlbits.herokuapp.com/rd/<%= @url.shortened_url %>"> urlbits.herokuapp/rd/<%= @url.shortened_url %> </a>
 </div>
+
+<%= form_for(@newUrl) do |f| %>
+	<%= f.text_area :original_url %>
+
+	<%= f.submit "Create Url" %>
+<% end %>
